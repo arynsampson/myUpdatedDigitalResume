@@ -14,6 +14,10 @@ nav {
     height: calc(100vh - 64px);
     padding: 40px;
     background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-img {
@@ -36,7 +40,7 @@ nav {
     font-size: 22px;
 }
 
-@media (min-width:1000px) {
+/* @media (min-width:1000px) {
     .main-profile-img {
         display: none;
     }
@@ -58,4 +62,4 @@ nav {
         background-image: url('../images/me_cropped.jpg');
         background-size: cover;
     }
-}
+} */
