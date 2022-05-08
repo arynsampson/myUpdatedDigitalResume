@@ -81,6 +81,22 @@ i {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.projects-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: lightskyblue;
+    border: 1px solid lightskyblue;
+    color: black;
+}
+
+footer img {
+    width: 40px;
+}
 /* @media (min-width:1000px) {
     .main-profile-img {
         display: none;
