@@ -1,0 +1,61 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.hero-section {
+    width: 100%;
+    height: calc(100vh - 64px);
+    padding: 40px;
+    background-color: lightskyblue;
+}
+
+.profile-img {
+    display: block;
+    width: 100%;
+    border-radius: 80%;
+    border: 10px white solid;
+}
+
+.hero-text {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+}
+
+.hero-text p {
+    font-size: 22px;
+}
+
+@media (min-width:1000px) {
+    .main-profile-img {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 0;
+        display: flex;
+    }
+
+    .hero-text {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-img {
+        width: 50%;
+        background-image: url('../images/me_cropped.jpg');
+        background-size: cover;
+    }
+}
