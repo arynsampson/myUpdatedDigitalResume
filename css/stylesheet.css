@@ -60,10 +60,12 @@ nav {
     font-size: 18px;
 }
 
-.experience {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.card {
+    margin-bottom: 15px;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 i {
@@ -82,41 +84,46 @@ i {
     background-position: center;
 }
 
-.projects-section .container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
 .btn-primary {
     background: lightskyblue;
     border: 1px solid lightskyblue;
     color: black;
 }
 
+.projects-section .row {
+    --bs-gutter-x: 0;
+}
+
 footer img {
     width: 40px;
 }
-/* @media (min-width:1000px) {
-    .main-profile-img {
-        display: none;
+
+@media (min-width: 767px) {
+    nav {
+        justify-content: space-between;
     }
 
-    .hero-section {
-        padding: 0;
-        display: flex;
+    .card {
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 991px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width:1200px) {
+    .experience .card {
+        padding: 25px 0;
     }
 
-    .hero-text {
-        width: 50%;
-        display: flex;
+    .experience .card-text {
+        padding: 10px;
+    }
+
+    .projects-section .row {
         justify-content: center;
-        align-items: center;
     }
-
-    .bg-img {
-        width: 50%;
-        background-image: url('../images/me_cropped.jpg');
-        background-size: cover;
-    }
-} */
+}

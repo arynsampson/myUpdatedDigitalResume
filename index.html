@@ -18,7 +18,7 @@
       <nav id="nav" class="container">
         <a href="#nav" class="nav-item">Home</a>
         <a href="#about" class="nav-item">About</a>
-        <a href="#resume" class="nav-item">Resume</a>
+        <a href="#experience" class="nav-item">Experience</a>
         <a href="#projects" class="nav-item">Projects</a>
       </nav>
     </header>
@@ -26,7 +26,11 @@
     <section class="hero-section section">
       <div class="container">
         <div class="main-profile-img">
-          <img src="./images/me_cropped_sm.jpg" alt="picture of me" class="profile-img">
+          <picture>
+            <source media="(max-width:650px)" srcset="./images/me_cropped_sm.jpg">
+            <source media="(max-width:1000px)" srcset="./images/me_cropped_lg.jpg">
+            <img src="./images/me_cropped.jpg" alt="picture of me" class="profile-img">
+          </picture>
         </div>
         <div class="hero-text">
           <div>
@@ -53,40 +57,47 @@
         </div>
       </section>
 
-      <section id="resume" class="section-grey">
+      <section id="experience" class="section-grey">
         <div class="container">
           <h4 class="section-heading">Experience</h4>
           <section class="experience">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Learning Technologist</h5>
-                <h6 class="card-subtitle mb-2 text-muted">2018 - 2020</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.
-                </p>
+            <div class="row">
+
+              <div class="card col-md">
+                <div class="card-body">
+                  <h5 class="card-title">Learning Technologist</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">2018 - 2020</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card col-md">
+                <div class="card-body">
+                  <h5 class="card-title">Senior Learning Technologist</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">2020 - 2021</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card col-md">
+                <div class="card-body">
+                  <h5 class="card-title">Software Support Engineer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">2021 - present</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Senior Learning Technologist</h5>
-                <h6 class="card-subtitle mb-2 text-muted">2020 - 2021</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Software Support Engineer</h5>
-                <h6 class="card-subtitle mb-2 text-muted">2021 - present</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.
-                </p>
-              </div>
-            </div>
+
+
           </section>
         </div>
       </section>
@@ -126,48 +137,47 @@
       <section id="projects" class="projects-section section-grey">
         <h4 class="section-heading">Projects</h4>
         <div class="container">
-          <div class="card">
-            <img src="./images/projects/incredible.png" class="card-img-top" alt="personal project one">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-              <a href="https://github.com/arynsampson/incredible" class="btn btn-primary" target="_blank">Github
-                repo</a>
-              <a href="https://arynsampson.github.io/incredible/" class="btn btn-primary" target="_blank">Live site</a>
+          <div class="row">
+
+            <div class="card col-xl-4">
+              <img src="./images/projects/incredible.png" class="card-img-top" alt="personal project one">
+              <div class="card-body">
+                <p class="card-text">Project title: <strong>Incredible</strong>
+                </p>
+                <a href="https://github.com/arynsampson/incredible" class="btn btn-primary" target="_blank">Github
+                  repo</a>
+                <a href="https://arynsampson.github.io/incredible/" class="btn btn-primary" target="_blank">Live
+                  site</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="./images/projects/minimal.png" class="card-img-top" alt="personal project two">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-              <a href="https://github.com/arynsampson/minimal" class="btn btn-primary" target="_blank">Github repo</a>
-              <a href="https://arynsampson.github.io/minimal/" class="btn btn-primary" target="_blank">Live site</a>
+
+            <div class="card col-xl-4">
+              <img src="./images/projects/minimal.png" class="card-img-top" alt="personal project two">
+              <div class="card-body">
+                <p class="card-text">Project title: <strong>Minimal</strong></p>
+                <a href="https://github.com/arynsampson/minimal" class="btn btn-primary" target="_blank">Github repo</a>
+                <a href="https://arynsampson.github.io/minimal/" class="btn btn-primary" target="_blank">Live site</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="./images/projects/newport.png" class="card-img-top" alt="personal project three">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.
-              </p>
-              <a href="https://github.com/arynsampson/newport" class="btn btn-primary" target="_blank">Github repo</a>
-              <a href="https://arynsampson.github.io/newport/" class="btn btn-primary" target="_blank">Live site</a>
+
+            <div class="card col-xl-4">
+              <img src="./images/projects/newport.png" class="card-img-top" alt="personal project three">
+              <div class="card-body">
+                <p class="card-text">Project title: <strong>Newport</strong></p>
+                <a href="https://github.com/arynsampson/newport" class="btn btn-primary" target="_blank">Github repo</a>
+                <a href="https://arynsampson.github.io/newport/" class="btn btn-primary" target="_blank">Live site</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="./images/projects/tokyo.png" class="card-img-top" alt="personal project four">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.
-              </p>
-              <a href="https://github.com/arynsampson/tokyo" class="btn btn-primary" target="_blank">Github repo</a>
-              <a href="https://arynsampson.github.io/tokyo/" class="btn btn-primary" target="_blank">Live site</a>
+
+            <div class="card col-xl-4">
+              <img src="./images/projects/tokyo.png" class="card-img-top" alt="personal project four">
+              <div class="card-body">
+                <p class="card-text">Project title: <strong>Tokyo</strong></p>
+                <a href="https://github.com/arynsampson/tokyo" class="btn btn-primary" target="_blank">Github repo</a>
+                <a href="https://arynsampson.github.io/tokyo/" class="btn btn-primary" target="_blank">Live site</a>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
