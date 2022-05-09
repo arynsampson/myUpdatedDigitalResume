@@ -16,33 +16,52 @@
 
     <header>
       <nav id="nav" class="container">
-        <a href="#nav" class="nav-item">Home</a>
-        <a href="#about" class="nav-item">About</a>
-        <a href="#experience" class="nav-item">Experience</a>
-        <a href="#projects" class="nav-item">Projects</a>
+        <a href="/" class="py-4 nav-item">Home</a>
+        <a href="#about" class="py-4 nav-item">About</a>
+        <a href="#experience" class="py-4 nav-item">Experience</a>
+        <a href="#projects" class="py-4 nav-item">Projects</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Click me
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hello!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Thank you for viewing my site!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section class="hero-section section">
+    <section class="hero-section p-5 text-center section">
       <div class="container">
         <div class="main-profile-img">
           <picture>
             <source media="(max-width:650px)" srcset="./images/me_cropped_sm.jpg">
-            <source media="(max-width:1000px)" srcset="./images/me_cropped_lg.jpg">
-            <img src="./images/me_cropped.jpg" alt="picture of me" class="profile-img">
+            <source media="(min-width:1000px)" srcset="./images/me_cropped_md.jpg">
+            <img src="./images/me_cropped_lg.jpg" alt="picture of me" class="profile-img">
           </picture>
         </div>
-        <div class="hero-text">
-          <div>
-            <h2>I'm Aryn Sampson</h2>
-          </div>
+        <div class="hero-text text-center pt-4">
+          <h2>Aryn Sampson</h2>
         </div>
         <div class="bg-img"></div>
       </div>
     </section>
 
     <main>
-      <section id="about" class="about-section section">
+      <section id="about" class="about-section p-5 text-center section">
         <div class="container">
           <h4 class="section-heading">About me</h4>
           <p>I'm currently working as a Software Support Engineer and studying Software development at CodeSpace, in
@@ -57,7 +76,7 @@
         </div>
       </section>
 
-      <section id="experience" class="section-grey">
+      <section id="experience" class="section-grey text-center p-5">
         <div class="container">
           <h4 class="section-heading">Experience</h4>
           <section class="experience">
@@ -102,7 +121,7 @@
         </div>
       </section>
 
-      <section class="skills-section section">
+      <section class="skills-section p-5 text-center section">
         <div class="container">
           <h4 class="section-heading">Skills</h4>
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -134,7 +153,7 @@
         </div>
       </section>
 
-      <section id="projects" class="projects-section section-grey">
+      <section id="projects" class="projects-section p-5 text-center section-grey text-center p-5">
         <h4 class="section-heading">Projects</h4>
         <div class="container">
           <div class="row">
