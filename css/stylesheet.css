@@ -66,13 +66,13 @@ i {
 }
 
 .carousel-control-prev-icon {
-    background:url("https://www.svgrepo.com/show/392613/arrow-chevron-left-direction-navigation.svg");
+    background:url("../images/directional_chevrons/left_facing_chevron.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .carousel-control-next-icon {
-    background:url("https://www.svgrepo.com/show/392620/arrow-chevron-right-direction-navigation.svg");
+    background:url("../images/directional_chevrons/right_facing_chevron.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
